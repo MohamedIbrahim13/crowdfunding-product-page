@@ -1,0 +1,116 @@
+@import "variables";
+@import "mixins";
+
+@include mQ(576px) {}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: $fontSize;
+    font-family: $bodyFont;
+    font-weight: 500;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    color: $Black;
+}
+
+p {
+    color:$Darkgray;
+    font-size:0.75em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {}
+
+header {
+    min-height: 45vh;
+    background-image: url("../images/image-hero-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+
+    @include mQ(576px) {
+        min-height: 60vh;
+        background-image: url("../images/image-hero-desktop.jpg");
+    }
+
+    ul {
+        
+        background: white;
+        border-radius: 5px;
+        @include mQ(576px) {
+            background:transparent;
+            border-radius:none;
+        }
+    }
+
+    li ,a {
+        
+        color: $Black !important;
+        
+        @include mQ(576px) {
+            color: white !important;
+            
+        }
+
+
+    }
+
+}
+.sub-title{
+    font-size:0.85em;
+}
+.btn-gray,.btn-cyan{
+    font-size:0.95em;
+}
+.btn-gray{
+    background:$Darkgray;
+    color: $Black;
+}
+
+.btn-cyan{
+    background:$Moderatecyan;
+    color: white;
+    &:hover{
+        background:$Darkcyan;
+        color: white;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+span{
+    font-size: 0.8em;
+    color:$Moderatecyan;
+}
+
+#info{
+    top:300vh;
+    @include mQ(576px) {
+        top:152.5vh;
+    }
+    .about p{
+        letter-spacing: 0.55px;
+        font-size: 0.95em;
+        line-height: 1.5;
+    }
+
+}
+
+.selected{
+    border:2px solid $Moderatecyan !important;
+}

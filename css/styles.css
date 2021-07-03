@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Commissioner", sans-serif;
+  font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  color: black;
+}
+
+p {
+  color: #7a7a7a;
+  font-size: 0.75em;
+}
+
+header {
+  min-height: 45vh;
+  background-image: url("../images/image-hero-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+@media screen and (min-width: 576px) {
+  header {
+    min-height: 60vh;
+    background-image: url("../images/image-hero-desktop.jpg");
+  }
+}
+header ul {
+  background: white;
+  border-radius: 5px;
+}
+@media screen and (min-width: 576px) {
+  header ul {
+    background: transparent;
+    border-radius: none;
+  }
+}
+header li, header a {
+  color: black !important;
+}
+@media screen and (min-width: 576px) {
+  header li, header a {
+    color: white !important;
+  }
+}
+
+.sub-title {
+  font-size: 0.85em;
+}
+
+.btn-gray, .btn-cyan {
+  font-size: 0.95em;
+}
+
+.btn-gray {
+  background: #7a7a7a;
+  color: black;
+}
+
+.btn-cyan {
+  background: #3cb4ac;
+  color: white;
+}
+.btn-cyan:hover {
+  background: #147b74;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+span {
+  font-size: 0.8em;
+  color: #3cb4ac;
+}
+
+#info {
+  top: 300vh;
+}
+@media screen and (min-width: 576px) {
+  #info {
+    top: 152.5vh;
+  }
+}
+#info .about p {
+  letter-spacing: 0.55px;
+  font-size: 0.95em;
+  line-height: 1.5;
+}
+
+.selected {
+  border: 2px solid #3cb4ac !important;
+}
